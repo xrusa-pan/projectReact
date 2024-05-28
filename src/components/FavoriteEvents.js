@@ -2,13 +2,13 @@ import React from 'react';
 import { Card, Button, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Favorite = ({ favoriteEvents, removeFromFavorites }) => {
+const FavoriteEvents = ({ favoriteEvents, removeFromFavorites }) => {
   return (
     <div className="container mt-4">
       <h2>Αγαπημένες Εκδηλώσεις</h2>
       <Row>
-        {favorite.length > 0 ? (
-          favorite.map(event => (
+        {favoriteEvents.length > 0 ? (
+          favoriteEvents.map(event => (
             <Col xs={12} sm={6} md={4} key={event.id} className="mb-4">
               <Card>
                 <Card.Img variant="top" src={event.image} />
@@ -38,4 +38,4 @@ const Favorite = ({ favoriteEvents, removeFromFavorites }) => {
   );
 };
 
-export default Favorite;
+export default FavoriteEvents;

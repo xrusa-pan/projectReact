@@ -19,7 +19,7 @@ body, html {
   background-size: cover;
   background-position: center;
   height: 85vh; 
-  color: white;
+  color: rgb(196, 180, 180);
   display: flex;
   justify-content: center;
   align-items: center;
