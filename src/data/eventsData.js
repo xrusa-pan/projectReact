@@ -26,7 +26,7 @@ const eventsData = [
       },
     ],
     rating: 4.9,
-    image: '/assets/events/Karnavali-Patras-scaled.jpg',
+    image: '/projectReact/assets/events/Karnavali-Patras-scaled.jpg',
   },
   {
     id: 2,

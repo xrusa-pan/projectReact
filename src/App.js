@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import EventList from './components/EventList';
 import EventDetails from './components/EventsDetails';
 import FavoriteEvents from './components/FavoriteEvents';
@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 const App = () => {
+
   const [favoriteEvents, setFavoriteEvents] = useState([]);
 
   const addToFavorites = (event) => {
