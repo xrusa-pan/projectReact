@@ -55,7 +55,7 @@ const eventsData = [
       },
     ],
     rating: 4.8,
-    image: '/assets/events/RomaikoOdeio-2.jpg',
+    image: '/projectReact/assets/events/RomaikoOdeio-2.jpg',
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ const eventsData = [
       },
     ],
     rating: 4.7,
-    image: '/assets/events/Θέατρο-Απόλλων-7.jpg',
+    image: '/projectReact/assets/events/Θέατρο-Απόλλων-7.jpg',
   },
   {
     id: 4,
@@ -113,7 +113,7 @@ const eventsData = [
       },
     ],
     rating: 4.6,
-    image: '/assets/events/agoraArgiri-1.jpg',
+    image: '/projectReact/assets/events/agoraArgiri-1.jpg',
   },
   {
     id: 5,
@@ -142,7 +142,7 @@ const eventsData = [
       },
     ],
     rating: 4.9,
-    image: '/assets/events/Αχαϊά-Κλάους-6.jpg',
+    image: '/projectReact/assets/events/Αχαϊά-Κλάους-6.jpg',
   },
   {
     id: 6,
@@ -171,7 +171,7 @@ const eventsData = [
       },
     ],
     rating: 4.8,
-    image: '/assets/events/863440.jpg',
+    image: '/projectReact/assets/events/863440.jpg',
   },
 ];
 
