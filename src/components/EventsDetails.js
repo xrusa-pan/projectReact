@@ -24,7 +24,7 @@ const EventDetail = ({ addToFavorites }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newReview = {
-      user: 'User', // Αντικαταστήστε με το όνομα του χρήστη αν υπάρχει σύστημα χρήστη
+      user: 'User',
       date: new Date().toISOString().split('T')[0],
       text: comment,
       rating: parseInt(rating),
@@ -32,10 +32,10 @@ const EventDetail = ({ addToFavorites }) => {
     const updatedReviews = [...reviews, newReview];
     setReviews(updatedReviews);
 
-    // Υπολογισμός του νέου μέσου όρου αξιολογήσεων
+    
     const totalRating = updatedReviews.reduce((acc, review) => acc + review.rating, 0);
     const avgRating = (totalRating / updatedReviews.length).toFixed(1);
-    event.rating = avgRating; // Ενημέρωση του μέσου όρου αξιολογήσεων
+    event.rating = avgRating;
 
     setRating(0);
     setComment('');
