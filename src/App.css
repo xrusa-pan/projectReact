@@ -32,7 +32,7 @@ body, html {
 }
 
 .event-section {
-  background-color: rgb(235, 187, 187);
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
