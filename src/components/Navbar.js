@@ -10,7 +10,7 @@ const NavbarComponent = () => {
       <Navbar.Brand as={Link} to="/">
         <img
           src={logo}
-          height="60"
+          height="100"
           className="d-inline-block align-top"
           alt="Patras Events Logo"
         />
