@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa';
 import eventsData from '../data/eventsData';
 import '../App.css';
 
-const ListEvent = ({ addToFavorites }) => {
+const EventList = ({ addToFavorites }) => {
   const [events, setEvents] = useState(eventsData);
   const [filter, setFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
@@ -84,7 +84,11 @@ const ListEvent = ({ addToFavorites }) => {
                 {isPastEvent(event.endDate) && (
                   <Badge bg="secondary" className="mb-2">Completed</Badge>
                 )}
-                <Button as={Link} to={`/event/${event.id}`} variant="primary">
+                <Button 
+                  as={Link} 
+                  to={isPastEvent(event.endDate) ? "#" : `/event/${event.id}`} 
+                  variant="primary" 
+                  disabled={isPastEvent(event.endDate)}>
                   Learn More
                 </Button>
               </Card.Body>
@@ -96,4 +100,4 @@ const ListEvent = ({ addToFavorites }) => {
   );
 };
 
-export default ListEvent;
+export default EventList;
