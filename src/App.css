@@ -1,4 +1,3 @@
-/* src/App.css */
 body, html {
   height: 100%;
   margin: 0;
@@ -15,10 +14,10 @@ body, html {
 }
 
 .homepage {
-  background-image: url('./assets/gettyimages-1151151755-612x612.jpg');
+  background-image: url('./assets/wallpaperflare.com_wallpaper.jpg');
   background-size: cover;
   background-position: center;
-  height: 50vh; /* Προσαρμόστε το ύψος όπως χρειάζεται */
+  height: 85vh; 
   color: white;
   display: flex;
   justify-content: center;
@@ -28,7 +27,7 @@ body, html {
 
 .container {
   flex: 1;
-  margin-top: 20px; /* Ρυθμίστε το για να επικαλύπτει σωστά το περιεχόμενο */
+  margin-top: 20px;
 }
 
 .event-section {
@@ -36,7 +35,7 @@ body, html {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px; /* Προσθέστε αυτό για να δημιουργήσετε κενό μεταξύ του τελευταίου div και του footer */
+  margin-bottom: 20px;
 }
 
 .past-event {
@@ -62,7 +61,7 @@ body, html {
   padding: 1rem 0;
   text-align: center;
   width: 100%;
-  margin-top: auto; /* Προσθέστε αυτό για να διασφαλίσετε ότι το footer είναι πάντα στο κάτω μέρος */
+  margin-top: auto; 
 }
 
 .card-favorite {
@@ -73,7 +72,7 @@ body, html {
 }
 
 .button-margin {
-  margin-right: 10px; /* Προσθέστε περιθώριο δεξιά για απόσταση μεταξύ των κουμπιών */
+  margin-right: 10px;
 }
 
 button.btn-warning {
