@@ -41,6 +41,8 @@ const NavbarComponent = () => {
             </NavDropdown>
             <Nav.Link as={Link} to="#">Αξιοθέατα</Nav.Link>
             <Nav.Link as={Link} to="#">Δραστηριότητες</Nav.Link>
+            <Nav.Link as={Link} to="/favorites">Αγαπημένες Εκδηλώσεις</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
