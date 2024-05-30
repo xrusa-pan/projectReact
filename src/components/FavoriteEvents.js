@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const FavoriteEvents = ({ favoriteEvents, removeFromFavorites }) => {
@@ -27,17 +27,23 @@ const FavoriteEvents = ({ favoriteEvents, removeFromFavorites }) => {
                   <Card.Text>
                     {event.shortDescription}
                   </Card.Text>
-                  <Button 
-                    as={Link} 
-                    to={isPastEvent(event.endDate) ? "#" : `/event/${event.id}`} 
-                    variant="primary" 
-                    className="button-margin"
-                    disabled={isPastEvent(event.endDate)}>
-                    Learn More
-                  </Button>
-                  <Button variant="danger" onClick={() => removeFromFavorites(event.id)} className="button-margin mt-2">
-                    Remove from Favorites
-                  </Button>
+                  {!isPastEvent(event.endDate) && (
+                    <>
+                      <Button 
+                        as={Link} 
+                        to={`/event/${event.id}`} 
+                        variant="primary" 
+                        className="button-margin">
+                        Learn More
+                      </Button>
+                      <Button 
+                        variant="danger" 
+                        onClick={() => removeFromFavorites(event.id)} 
+                        className="button-margin mt-2">
+                        Remove from Favorites
+                      </Button>
+                    </>
+                  )}
                 </Card.Body>
               </Card>
             </Col>

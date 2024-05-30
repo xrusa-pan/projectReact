@@ -64,11 +64,6 @@ const EventList = ({ addToFavorites }) => {
         {events.map(event => (
           <Col xs={12} sm={6} md={4} key={event.id} className="mb-4">
             <Card className={isPastEvent(event.endDate) ? 'past-event' : 'active-event'}>
-              <div className="card-favorite">
-                <Button onClick={() => addToFavorites(event)} variant="warning" className="button-margin">
-                  Προσθήκη στις Αγαπημένες
-                </Button>
-              </div>
               <Card.Img variant="top" src={event.image} />
               <Card.Body>
                 <Card.Title>{event.title}</Card.Title>
@@ -84,14 +79,23 @@ const EventList = ({ addToFavorites }) => {
                 {isPastEvent(event.endDate) && (
                   <Badge bg="secondary" className="mb-2">Completed</Badge>
                 )}
-                <Button 
-                  as={Link} 
-                  to={isPastEvent(event.endDate) ? "#" : `/event/${event.id}`} 
-                  variant="primary" 
-                  className="button-margin"
-                  disabled={isPastEvent(event.endDate)}>
-                  Learn More
-                </Button>
+                {!isPastEvent(event.endDate) && (
+                  <>
+                    <Button 
+                      as={Link} 
+                      to={`/event/${event.id}`} 
+                      variant="primary" 
+                      className="button-margin">
+                      Learn More
+                    </Button>
+                    <Button 
+                      onClick={() => addToFavorites(event)} 
+                      variant="warning" 
+                      className="button-margin mt-2">
+                      Προσθήκη στις Αγαπημένες
+                    </Button>
+                  </>
+                )}
               </Card.Body>
             </Card>
           </Col>
