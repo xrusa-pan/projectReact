@@ -22,7 +22,7 @@ const NavbarComponent = () => {
             className="d-inline-block align-top"
             alt="Patras Events Logo"
           />
-          Patras Events
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
