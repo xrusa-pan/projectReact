@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/projectReact/static/css/main.f9f3e2dc.css",
-    "main.js": "/projectReact/static/js/main.01bc80ec.js",
+    "main.css": "/projectReact/static/css/main.b1d24c0a.css",
+    "main.js": "/projectReact/static/js/main.8ae4fd50.js",
     "static/js/453.7009d970.chunk.js": "/projectReact/static/js/453.7009d970.chunk.js",
-    "static/media/wallpaperflare.com_wallpaper.jpg": "/projectReact/static/media/wallpaperflare.com_wallpaper.c04f81653e2245ce25c4.jpg",
+    "static/media/gettyimages-1151151755-612x612.jpg": "/projectReact/static/media/gettyimages-1151151755-612x612.e3e1d9de0e044b999401.jpg",
     "static/media/logo.png": "/projectReact/static/media/logo.880f6a3529a96c93086a.png",
     "index.html": "/projectReact/index.html",
-    "main.f9f3e2dc.css.map": "/projectReact/static/css/main.f9f3e2dc.css.map",
-    "main.01bc80ec.js.map": "/projectReact/static/js/main.01bc80ec.js.map",
+    "main.b1d24c0a.css.map": "/projectReact/static/css/main.b1d24c0a.css.map",
+    "main.8ae4fd50.js.map": "/projectReact/static/js/main.8ae4fd50.js.map",
     "453.7009d970.chunk.js.map": "/projectReact/static/js/453.7009d970.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9f3e2dc.css",
-    "static/js/main.01bc80ec.js"
+    "static/css/main.b1d24c0a.css",
+    "static/js/main.8ae4fd50.js"
   ]
 }
