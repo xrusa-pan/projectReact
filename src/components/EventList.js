@@ -65,7 +65,7 @@ const EventList = ({ addToFavorites }) => {
           <Col xs={12} sm={6} md={4} key={event.id} className="mb-4">
             <Card className={isPastEvent(event.endDate) ? 'past-event' : 'active-event'}>
               <div className="card-favorite">
-                <Button onClick={() => addToFavorites(event)} variant="warning">
+                <Button onClick={() => addToFavorites(event)} variant="warning" className="button-margin">
                   Προσθήκη στις Αγαπημένες
                 </Button>
               </div>
@@ -88,6 +88,7 @@ const EventList = ({ addToFavorites }) => {
                   as={Link} 
                   to={isPastEvent(event.endDate) ? "#" : `/event/${event.id}`} 
                   variant="primary" 
+                  className="button-margin"
                   disabled={isPastEvent(event.endDate)}>
                   Learn More
                 </Button>

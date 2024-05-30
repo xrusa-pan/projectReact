@@ -31,10 +31,11 @@ const FavoriteEvents = ({ favoriteEvents, removeFromFavorites }) => {
                     as={Link} 
                     to={isPastEvent(event.endDate) ? "#" : `/event/${event.id}`} 
                     variant="primary" 
+                    className="button-margin"
                     disabled={isPastEvent(event.endDate)}>
                     Learn More
                   </Button>
-                  <Button variant="danger" onClick={() => removeFromFavorites(event.id)} className="mt-2">
+                  <Button variant="danger" onClick={() => removeFromFavorites(event.id)} className="button-margin mt-2">
                     Remove from Favorites
                   </Button>
                 </Card.Body>
